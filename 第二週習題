@@ -1,0 +1,19 @@
+function bsearch(a, o, from, to) {
+    if (from > to) return null
+    var mid = Math.floor((from + to)/2) 
+    while(from < to)
+    {
+        if (a[mid] === o)  return mid;
+        else if (o > a[mid])
+        {
+            from=mid+1; 
+        }
+        else//(o < a[mid])
+        {
+            to=mid;
+            from=0;
+        }
+        mid = Math.floor((from + to)/2) 
+    }
+
+  }
